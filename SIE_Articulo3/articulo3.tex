@@ -87,22 +87,42 @@ Los sistemas OLTP son sistemas de procesamiento de transacciones en línea, por 
 \item \textbf{A la hora de obtener información sobre el funcionamiento general de la empresa, ¿qué características tiene el tipo de sistema preferido 	 por los gestores?}
 \end{itemize}
 A diferencia del sistema comentado anteriormente, un sistema que usa OLAP y MDDB es intuitivo, fácil de usar y está orientado a la busqueda de información de tal forma que permita, mediante un vistazo rápido, saber que está pasando en la empresa y formarse una idea general sobre la misma.
-	
+%%%%%%%%%%%%%%%% OJO A JUGAR PARA LAS COMILLAS DOBLES
 \begin{itemize}
 \item \textbf{¿Cómo se representa la información cuando utilizamos una base de datos multidimensional?. Indica un ejemplo}
 \end{itemize}
+La información se representa mediante arrays (vectores, listas) de varias dimensiones. A la estructura que toman los datos en la base se la llama \textbf{hipercubo}, aunque esta puede no tener forma de cubo, esto es, si el array en cuestión tiene una dimensión 4, no podemos representar esa estructura como un tetraedro, ya que para ello el array debería ser de dimensión 3. Estas estructuras son preferidas a otras porque permiten ``jugar'' con la información para observarla desde muchos puntos de vista diferentes, centrar el análisis en un único aspecto de los datos, etc. El uso más simple de estas bases es el que podemos observar en el ejemplo.
+\includegraphics[scale=0.75]{ejemplo}
+\newline
+En este caso, el dato a estudiar ha sido el beneficio que obtiene la empresa y las variables según las cuales lo hemos estudiado han sido la hora del día, el día de la semana y el mes del año. Esta representación permite ver como varían los datos según cada una de las variables, localizar los puntos donde se detecten perdidas y arreglarlos, etc. Cabe también destacar que cada valor de beneficio está identificado de forma unívoca por sus coordenadas en el cubo (mes, día, hora).
 
-\begin{figure}
-\centering
-\includegraphics{cubo}
-\end{figure}
 
 \begin{itemize}
-\item \textbf{¿Cómo es el proceso de implantación de un ERP?}
+\item \textbf{¿Por qué las base de datos relacionales son adecuadas para almacenar información transaccional y no analítica?}
+\end{itemize}
+Porque estas bases permitían guardar información de las transacciones de forma rápida y sencilla, información que luego se podía estudiar con los informes autogenerados o a través de órdenes SQL. No obstante, dada la fragmentación y volumen que presentan los datos usados en analítica, manejar estas bases de datos dejaba de ser una trivialidad, por lo que para analítica se prefieren las MDDB.
+
+\begin{itemize}
+\item \textbf{ ¿Qué tipo de información suele almacenarse en las base de datos multidimensionales?}
+\end{itemize}
+Los datos comúnmente almacenados en estas bases de datos suelen ser numéricos y muestran el rendimiento que ha tenido la empresa u organización a lo largo de su historia. Estos datos provienen de otras bases de la empresa, que se vuelcan en la base multidimensional y esta limpia, resume y procesa la información para el uso de los gestores.
+
+\begin{itemize}
+\item \textbf{ ¿Qué tipo de interactividad es permitida sobre los datos de una base de datos multidimensional?¿Qué tipo de aplicaciones permiten esta interactividad?}
+\end{itemize}
+Siguiendo la metáfora del cubo respecto a la representación de la información, el cubo puede hacerse rodajas, para observar los valores de los datos respecto a un valor concreto de una de las coordenadas de los mismos. Estas rodajas pueden trocearse además para observar la información enmarcada en un rango de valores. Podemos observar cuadrados concretos del cubo o subconjuntos del mismo. Podemos pasar el cubo por un filtro para quedarnos con los bloques que satisfagan ese filtro. Normalmente esto se hace mediante interfaces gráficas, lo que hace el análisis más ameno que la lectura de un informe. Al conjunto de herramientas que se usan para esa manipulación del cubo se les llama OLAP. 
+
+\begin{itemize}
+\item \textbf{¿Qué opciones tenemos a la hora de implantar una MDDB? ¿En qué se centra cada una de ellas?}
+\end{itemize}
+
+
+\begin{itemize}
+\item \textbf{ ¿Qué tipo de información suele almacenarse en las base de datos multidimensionales?}
 \end{itemize}
 
 \begin{itemize}
-\item \textbf{¿Cómo es el proceso de implantación de un ERP?}
+\item \textbf{ ¿Qué tipo de información suele almacenarse en las base de datos multidimensionales?}
 \end{itemize}
 
 %------------------------------------------------
