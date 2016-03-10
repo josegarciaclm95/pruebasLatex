@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.2.15)  9 MAR 2016 23:06
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.2.15)  10 MAR 2016 15:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -538,25 +538,38 @@ File: images/ejemplo.png Graphic file (type png)
 Package pdftex.def Info: images/ejemplo.png used on input line 95.
 (pdftex.def)             Requested size: 416.27417pt x 260.17136pt.
 
-[2 <./images/ejemplo.png>] [3] (./articulo3.aux
+[2 <./images/ejemplo.png>]
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 120.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 7.63599pt on input line 120.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 120.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 120.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 7.63599pt on input line 120.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 120.
+ [3] [4] (./articulo3.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
- 5634 strings out of 493304
- 81240 string characters out of 6139871
- 275917 words of memory out of 5000000
- 8976 multiletter control sequences out of 15000+600000
- 71386 words of font info for 64 fonts, out of 8000000 for 9000
+ 5651 strings out of 493304
+ 81511 string characters out of 6139871
+ 276917 words of memory out of 5000000
+ 8993 multiletter control sequences out of 15000+600000
+ 88755 words of font info for 81 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  47i,10n,47p,742b,653s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texli
 ve/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/adobe/utopia/putr8a.pfb>
-Output written on articulo3.pdf (3 pages, 67021 bytes).
+Output written on articulo3.pdf (4 pages, 69908 bytes).
 PDF statistics:
- 26 PDF objects out of 1000 (max. 8388607)
- 16 compressed objects within 1 object stream
+ 29 PDF objects out of 1000 (max. 8388607)
+ 18 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

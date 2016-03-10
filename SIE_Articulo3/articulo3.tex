@@ -115,15 +115,31 @@ Siguiendo la metáfora del cubo respecto a la representación de la información
 \begin{itemize}
 \item \textbf{¿Qué opciones tenemos a la hora de implantar una MDDB? ¿En qué se centra cada una de ellas?}
 \end{itemize}
+Existen dos enfoques a la hora de implementar una MDDB:
+\begin{enumerate}
+\item \underline{Enfoque top-down (de arriba a abajo)}: centrado en la planificación del negocio.
+\item \underline{Enfoque bottom-up (de abajo a arriba)}: centrado en bases y sistemas existentes.
+\end{enumerate}
+
+\begin{itemize}
+\item \textbf{ ¿En qué consiste el ``síndrome de los datos disponibles''?}
+\end{itemize}
+Es un síndrome en el que se puede caer al usar como enfoque de implementación el bottom-up, que implica que al partir de datos y sistemas que ya existen, se intenta crear una base que lo contenga todo y lo tenga disponible para todos, cuando realmente eso no es necesario.
+
+\begin{itemize}
+\item \textbf{ ¿Qué pasos se dan en una implantación top-down?}
+\end{itemize}
+En este proceso de implementación se empieza desde arriba, es decir, partimos de lo que la empresa quiere y para que lo quiere. Se lleva a cabo una elicitación de requisitos y el desarrollador prepara un prototipo de MDDB que muestra a la empresa haciendo uso de un software OLAP. Este enfoque asegura que la base que se desarrolle se ajustará a las necesidades de la empresa, lo que no siempre es bueno, ya que la base se desarrollará para un fin concreto, además de que se hará sin tener en cuenta los sistemas sobre los que se apoya, lo que puede dar lugar a problemas si estos no se prevén durante el desarrollo. 
+
+\begin{itemize}
+\item \textbf{ ¿Qué pasos se dan en una implantación bottom-up?}
+\end{itemize}
 
 
 \begin{itemize}
-\item \textbf{ ¿Qué tipo de información suele almacenarse en las base de datos multidimensionales?}
+\item \textbf{¿Qué enfoque alternativo puede plantearse? ¿En qué consiste?}
 \end{itemize}
 
-\begin{itemize}
-\item \textbf{ ¿Qué tipo de información suele almacenarse en las base de datos multidimensionales?}
-\end{itemize}
 
 %------------------------------------------------
 
