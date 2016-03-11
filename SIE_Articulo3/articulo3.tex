@@ -132,9 +132,12 @@ Es un síndrome en el que se puede caer al usar como enfoque de implementación 
 En este proceso de implementación se empieza desde arriba, es decir, partimos de lo que la empresa quiere y para que lo quiere. Se lleva a cabo una elicitación de requisitos y el desarrollador prepara un prototipo de MDDB que muestra a la empresa haciendo uso de un software OLAP. Este enfoque asegura que la base que se desarrolle se ajustará a las necesidades de la empresa, lo que no siempre es bueno, ya que la base se desarrollará para un fin concreto, además de que se hará sin tener en cuenta los sistemas sobre los que se apoya, lo que puede dar lugar a problemas si estos no se prevén durante el desarrollo. 
 
 \begin{itemize}
-\item \textbf{ ¿Qué pasos se dan en una implantación bottom-up?}
+\item \textbf{¿Qué pasos se dan en una implantación bottom-up?}
 \end{itemize}
-
+	En una implementación partimos de unos datos que ya existen en unas bases de datos de una tecnología completa. El primer paso es analizar dichos datos y tomar medidas para la confección de la base de datos relacional. Esta toma de medidas da lugar a lo que se conoce como diagrama en estrella, que contiene dos tipos de tablas:
+	-Tabla de hecho, formada por datos numéricos que existen dentro de la base de datos
+	-Tablas de dimensiones, formadas por datos más descriptivos que se pueden asociar a las dimensiones de la base dentro de la empresa.
+Este diagrama se usa para traducir la base de datos relacional a una MDDB, ya que permite concretar el tema central del análisis. Esta traducción es también una simplifación y puede incluso automatizarse. 
 
 \begin{itemize}
 \item \textbf{¿Qué enfoque alternativo puede plantearse? ¿En qué consiste?}
