@@ -112,7 +112,7 @@ Los datos comúnmente almacenados en estas bases de datos suelen ser numéricos 
 \begin{itemize}
 \item \textbf{ ¿Qué tipo de interactividad es permitida sobre los datos de una base de datos multidimensional?¿Qué tipo de aplicaciones permiten esta interactividad?}
 \end{itemize}
-Siguiendo la metáfora del cubo respecto a la representación de la información, el cubo puede \textbf{hacerse rodajas}, para observar los valores de los datos respecto a un valor concreto de una de las coordenadas de los mismos. Estas rodajas pueden \textbf{trocearse} además para observar la información enmarcada en un rango de valores. Podemos observar cuadrados concretos del cubo o subconjuntos del mismo. Podemos pasar el cubo por un \textbf{filtro} para quedarnos con los bloques que satisfagan ese filtro. Normalmente esto se hace mediante interfaces gráficas, lo que hace el análisis más ameno que la lectura de un informe. Al conjunto de herramientas que se usan para esa manipulación del cubo se les llama OLAP. 
+Siguiendo la metáfora del cubo respecto a la representación de la información, el cubo puede \textbf{hacerse rodajas}, para observar los valores de los datos respecto a un valor concreto de una de las coordenadas de los mismos. Estas rodajas pueden \textbf{trocearse} además para observar la información enmarcada en un rango de valores. Podemos observar cuadrados concretos del cubo o subconjuntos del mismo. Podemos \textbf{comprimir} el cubo para observar un resumen de todos los datos, o al contrario, podemos \textbf{aumentar} una sección del cubo para estudiar datos muy localizados. Podemos pasar el cubo por un \textbf{filtro} para quedarnos con los bloques que satisfagan ese filtro. Normalmente todo esto se hace mediante interfaces gráficas, lo que hace el análisis más ameno que la lectura de un informe. Al conjunto de herramientas que se usan para esa manipulación del cubo se les llama OLAP. 
 
 \begin{itemize}
 \item \textbf{¿Qué opciones tenemos a la hora de implantar una MDDB? ¿En qué se centra cada una de ellas?}
@@ -121,8 +121,9 @@ Existen dos enfoques a la hora de implementar una MDDB:
 \begin{enumerate}
 \item \underline{Enfoque top-down (de arriba a abajo)}: centrado en la planificación del negocio.
 \item \underline{Enfoque bottom-up (de abajo a arriba)}: centrado en bases y sistemas existentes.
+\item \underline{Enfoque middle-out (mezcla de los dos anteriores)}: centrado al mismo tiempo en lo que necesita la empresa y las tecnologías en las que se apoya.
 \end{enumerate}
-
+Desarrollaremos los pasos de cada uno de estos enfoques en apartados posteriores.
 \begin{itemize}
 \item \textbf{ ¿En qué consiste el ``síndrome de los datos disponibles''?}
 \end{itemize}
@@ -156,7 +157,7 @@ El problema que tiene este enfoque es que hacer esa traducción es una tarea de 
 \begin{itemize}
 \item \textbf{¿Qué enfoque alternativo puede plantearse? ¿En qué consiste?}
 \end{itemize}
-Existe un enfoque alternativo a estos dos que es realmente una media de ambos. Dado que podríamos considerar el enfoque top-down como un enfoque centrado en el usuario y el bottom-up como un enfoque centrado en el desarrollador, podríamos considerar este enfoque como uno orientado a ambas figuras y que consta de los siguientes pasos.
+Existe un enfoque alternativo a estos dos que es realmente una media de ambos, el enfoque \textbf{middle-out}. Dado que podríamos considerar el enfoque top-down como un enfoque centrado en el usuario y el bottom-up como un enfoque centrado en el desarrollador, podríamos considerar este enfoque como uno orientado a ambas figuras y que consta de los siguientes pasos.
 	\begin{enumerate}
 	\item Elegir un gestor apto para ejercer el rol de representante del proyecto (en el lado de la empresa). Extraer de este representante las necesidades de la empresa.
 	\item Localizar las fuentes de datos necesarias para tomar las medidas de la MDDB e identificar un subconjunto de los datos a modo de muestra con el que se pueda trabajar fácilmente.

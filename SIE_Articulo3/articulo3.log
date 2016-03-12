@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.28)  12 MAR 2016 16:09
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.28)  12 MAR 2016 18:19
 entering extended mode
 **articulo3.tex
 (C:\Users\Usuario\Documents\pruebasLatex\SIE_Articulo3\articulo3.tex
@@ -510,8 +510,12 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 5.51999pt on input line 122.
 
+Overfull \hbox (4.24928pt too wide) in paragraph at lines 124--125
+[]$[]$\T1/futs/m/n/10.95 : cen-tra-do al mis-mo tiem-po en lo que
+ []
+
 [3]
-LaTeX Font Info:    Try loading font information for TS1+futs on input line 149
+LaTeX Font Info:    Try loading font information for TS1+futs on input line 150
 .
  (C:\Users\Usuario\AppData\Roaming\MiKTeX\2.9\tex\latex\fourier\ts1futs.fd
 File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
@@ -521,15 +525,15 @@ File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
 Here is how much of TeX's memory you used:
  5455 strings out of 493921
  80086 string characters out of 3144870
- 293721 words of memory out of 3000000
+ 292721 words of memory out of 3000000
  8666 multiletter control sequences out of 15000+200000
  76103 words of font info for 75 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 41i,10n,47p,769b,666s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,10n,47p,955b,666s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program 
 Files (x86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/Program Files (x
 86)/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb>
-Output written on articulo3.pdf (5 pages, 76334 bytes).
+Output written on articulo3.pdf (5 pages, 76891 bytes).
 PDF statistics:
  30 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
